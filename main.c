@@ -82,7 +82,7 @@ void print_word ( int v ) {
 
 int main () {
 
-    int user_socre = 0;
+    int user_score = 0;
     int comp_score = 0;
     srand( time(NULL) );
 
@@ -108,7 +108,7 @@ int main () {
 
         else if ( result == USER_WIN ) {
             printf("User WINS! and Computer LOST the game\n ");
-            user_socre++;
+            user_score++;
         }
 
         else if ( result == COMP_WIN ) {
@@ -119,7 +119,7 @@ int main () {
         printf("\n");
         printf("-------------------------------------------------------------------\n");
 
-        printf("User score: %d\n", user_socre);
+        printf("User score: %d\n", user_score);
         printf("Computer score: %d\n", comp_score);
 
         printf("-------------------------------------------------------------------\n");
@@ -142,17 +142,17 @@ int main () {
     printf("\n");
     printf("-------------------------------------------------------------------\n");
 
-    printf("User score: %d\n", user_socre);
+    printf("User score: %d\n", user_score);
     printf("Computer score: %d\n", comp_score);
 
     printf("-------------------------------------------------------------------\n");
     printf("\n\n");
 
-    if ( user_socre == comp_score ) {
+    if ( user_score == comp_score ) {
         printf("Game DRAW\n");
     }
 
-    else if ( user_socre > comp_score ) {
+    else if ( user_score > comp_score ) {
         printf ("User WINS! the game\n");
     }
 
