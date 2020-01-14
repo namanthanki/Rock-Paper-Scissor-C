@@ -41,6 +41,8 @@ int rock_paper_scissor(int user, int comp) {
     else {
         result = DRAW;
     }
+
+    return result;
 }
 
 int get_user_input() {
@@ -84,7 +86,7 @@ int main () {
 
     int user_score = 0;
     int comp_score = 0;
-    srand( time(NULL) );
+    srand(time(NULL));
 
     int quit = 0;
 
@@ -92,7 +94,7 @@ int main () {
     {
 
         int user_input = get_user_input();
-        int comp_choice = rand() % 3;
+        int comp_choice = (rand() % 3) + 1;
 
         printf("Computer chose: ");
         print_word(comp_choice);
